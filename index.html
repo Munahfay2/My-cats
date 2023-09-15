@@ -31,20 +31,28 @@
 	</head>
 	<body>
 		<!-- the navbar section -->
-		<nav class="min-h-20 p-2 flex flex-col md:flex-row items-center justify-between">
-			<div class="flex justify-between w-full md:w-fit items-center space-x-2">
+		<nav
+			class="min-h-20 p-2 flex flex-col md:flex-row items-center justify-between">
+			<div
+				class="flex justify-between w-full md:w-fit items-center space-x-2">
 				<div class="flex w-fit h-full items-center">
 					<img
-					src="/assets/img/logo.png"
-					alt=""
-					class="h-10" />
+						src="/assets/img/logo.png"
+						alt=""
+						class="h-10" />
 					<span class="text-2xl">Fluffy Felines</span>
 				</div>
-				<button class="w-fit h-fit md:hidden" onclick="toogleMenu()">
-					<img src="/assets/img/navbar-menu.svg" class="h-8 self-end" />
+				<button
+					class="w-fit h-fit md:hidden"
+					onclick="toogleMenu()">
+					<img
+						src="/assets/img/navbar-menu.svg"
+						class="h-8 self-end" />
 				</button>
 			</div>
-			<ul id="nav-menu" class="hidden">
+			<ul
+				id="nav-menu"
+				class="hidden">
 				<li
 					class="anchor-link underline underline-offset-4 decoration-2">
 					<a href="index.html">Home</a>
@@ -159,11 +167,11 @@
 
 		<script lang="js">
 			function toogleMenu() {
-				const menuSection = document.getElementById("nav-menu");
-				if(menuSection.className === "responsive-menu") {
-					menuSection.className = "hidden";
+				const menuSection = document.getElementById('nav-menu');
+				if (menuSection.className === 'responsive-menu') {
+					menuSection.className = 'hidden';
 				} else {
-					menuSection.className = "responsive-menu";
+					menuSection.className = 'responsive-menu';
 				}
 			}
 		</script>
