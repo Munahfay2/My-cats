@@ -31,15 +31,20 @@
 	</head>
 	<body>
 		<!-- the navbar section -->
-		<nav class="h-20 p-2 flex items-center justify-between">
-			<h1 class="inline-flex items-center space-x-2">
-				<img
+		<nav class="min-h-20 p-2 flex flex-col md:flex-row items-center justify-between">
+			<div class="flex justify-between w-full md:w-fit items-center space-x-2">
+				<div class="flex w-fit h-full items-center">
+					<img
 					src="/assets/img/logo.png"
 					alt=""
 					class="h-10" />
-				<span class="text-2xl">Fluffy Felines</span>
-			</h1>
-			<ul class="flex justify-end space-x-11">
+					<span class="text-2xl">Fluffy Felines</span>
+				</div>
+				<button class="w-fit h-fit md:hidden" onclick="toogleMenu()">
+					<img src="/assets/img/navbar-menu.svg" class="h-8 self-end" />
+				</button>
+			</div>
+			<ul id="nav-menu" class="hidden">
 				<li
 					class="anchor-link underline underline-offset-4 decoration-2">
 					<a href="index.html">Home</a>
@@ -60,8 +65,8 @@
 			<div
 				class="h-[45rem] w-full bg-[url('https://images.unsplash.com/photo-1534803359379-964dadf6c290?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')] bg-origin-border bg-cover relative flex justify-center items-center">
 				<div class="text-white w-full h-fit px-4">
-					<div class="h-fit w-[40%]">
-						<h1 class="font-ubuntu text-6xl mb-2">
+					<div class="h-fit w-full md:w-[40%]">
+						<h1 class="font-ubuntu text-3xl md:text-6xl mb-2">
 							Your Cats Deserve Care
 						</h1>
 						<p class="font-roboto text-lg mb-4">
@@ -151,5 +156,16 @@
 		</main>
 		<!-- the footer section -->
 		<footer class="text-center h-10">Github</footer>
+
+		<script lang="js">
+			function toogleMenu() {
+				const menuSection = document.getElementById("nav-menu");
+				if(menuSection.className === "responsive-menu") {
+					menuSection.className = "hidden";
+				} else {
+					menuSection.className = "responsive-menu";
+				}
+			}
+		</script>
 	</body>
 </html>
