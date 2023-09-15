@@ -12,8 +12,14 @@
 	.contact-us-inputs {
 		@apply outline-none border w-full p-2 h-14 font-roboto placeholder:text-gray-500 focus:border-gray-600;
 	}
+
+	.responsive-menu {
+		@apply flex flex-col space-y-2 md:space-y-0 md:flex-row justify-end space-x-0 md:space-x-11;
+	}
 }
 
 .contact-us-form-labels {
 	@apply my-1 font-roboto tracking-wide block;
 }
+
+
