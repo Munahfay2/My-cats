@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<link
+			href="/dist/output.css"
+			rel="stylesheet" />
+
+		<!-- favicons -->
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="/assets/img/favicon.svg" />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="/assets/img/favicon.svg" />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="/assets/img/favicon.svg" />
+		<link
+			rel="manifest"
+			href="/assets/img/favicon.svg" />
+		<title>Fluffy Felines: Contact Us</title>
+	</head>
+	<body class="flex flex-col justify-between min-h-screen">
+		<!-- the navbar section -->
+		<nav class="h-20 p-2 flex items-center justify-between border-b">
+			<h1 class="inline-flex items-center space-x-2">
+				<img
+					src="/assets/img/logo.png"
+					alt=""
+					class="h-10" />
+				<span class="text-2xl">Fluffy Felines</span>
+			</h1>
+			<ul class="flex justify-end space-x-11">
+				<li class="anchor-link">
+					<a href="/">Home</a>
+				</li>
+				<li
+					class="anchor-link underline underline-offset-4 decoration-2">
+					<a href="contact-us.html">Contact us</a>
+				</li>
+				<li class="anchor-link">
+					<a href="about.html">About</a>
+				</li>
+				<li class="anchor-link">
+					<a href="felines.html">Felines</a>
+				</li>
+			</ul>
+		</nav>
+		<main class="flex-grow flex justify-center py-2">
+			<form
+				action="#"
+				class="w-full md:w-[45%] mx-2">
+				<h1 class="font-ubuntu text-4xl text-center my-4">
+					Contact Us
+				</h1>
+				<div class="w-full h-fit">
+					<label
+						for="your-name"
+						class="contact-us-form-labels"
+						>Your Name</label
+					>
+					<input
+						type="text"
+						id="your-name"
+						class="contact-us-inputs"
+						placeholder="e.g John Doe" />
+				</div>
+				<div class="w-full">
+					<label
+						for="your-name"
+						class="contact-us-form-labels"
+						>Your Email</label
+					>
+					<input
+						type="email"
+						id="your-name"
+						class="contact-us-inputs peer"
+						placeholder="e.g johndoe@gmail.com" />
+					<span
+						class="text-red-500 text-sm font-roboto tracking-wide invisible peer-focus:visible"
+						>Required</span
+					>
+					<span
+						class="text-red-500 text-sm font-roboto tracking-wide invisible peer-invalid:visible"
+						>please enter a valid email</span
+					>
+				</div>
+				<div class="w-full">
+					<label
+						for="your-name"
+						class="contact-us-form-labels"
+						>Name of Your Cat</label
+					>
+					<input
+						type="text"
+						id="your-name"
+						class="contact-us-inputs peer"
+						placeholder="e.g Chucky" />
+					<span
+						class="text-green-500 text-sm font-roboto tracking-wide invisible peer-focus:visible"
+						>Optional</span
+					>
+				</div>
+				<div class="w-full h-fit">
+					<label
+						for="your-name"
+						class="contact-us-form-labels"
+						>Subject Line</label
+					>
+					<input
+						type="text"
+						id="your-name"
+						class="contact-us-inputs peer"
+						placeholder="e.g Chucky" />
+					<span
+						class="text-red-500 text-sm font-roboto tracking-wide invisible peer-focus:visible"
+						>Required</span
+					>
+				</div>
+				<div class="w-full h-fit">
+					<label
+						for="your-name"
+						class="contact-us-form-labels"
+						>Your Message</label
+					>
+					<textarea
+						id=""
+						cols="30"
+						rows="30"
+						class="contact-us-inputs h-48"
+						placeholder="Enter your message here"></textarea>
+				</div>
+				<div class="flex justify-center">
+					<button
+						type="submit"
+						class="bg-pink-300 p-2 rounded-lg text-white transition-colors duration-300 hover:bg-pink-500 ease-in-out">
+						Submit Message
+					</button>
+				</div>
+			</form>
+		</main>
+		<footer class="h-10 flex items-center justify-center">
+			<span class="font-roboto">
+				Checkout on
+				<a
+					href="https://github.com/Munahfay2/My-cats"
+					class="hover:underline text-blue-500 hover:text-blue-700"
+					>Github</a
+				>
+			</span>
+		</footer>
+	</body>
+</html>
