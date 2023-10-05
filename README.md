@@ -4,7 +4,7 @@ Welcome to the Cats Website, your go-to destination for all things feline! Our w
 ## ==Table of Contents==
 
 - [About](src/pages/about.html)
-- [Home](index.html)   
+- [Home](https://munahfay2.github.io/My-cats/)   
 - ![Gallery](src/pages/felines.html)
 - [Contact](src/pages/contact-us.html)
 ## ==About==
